@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Electron Read Us</title>
+</head>
+<body>
+<div>
+	タイトル
+	<input type="text" id="text">
+</div>
+<div>
+	文字数
+	<input type="text" id="difficulty">
+	文字
+</div>
+<div>
+	期限
+	<input type="text" id="deadLine0">
+	年
+	<input type="text" id="deadLine1">
+	月
+	<input type="text" id="deadLine2">
+	日
+	<input type="text" id="deadLine3">
+	時
+</div>
+<div>
+	<input type="button" value="新規作成" onClick="make()">
+</div>
+<div>
+	<br>
+	<input type="button" value="開始" onClick="start()">
+	<input type="button" value="停止" onClick="stop()">
+	<input type="button" value="終了" onClick="finish()">
+	<input type="button" value="全削除" onClick="clear()">
+</div>
+<br>
+<div id="list"></div>
+<div id="subject">
+	<h1>タスクなし</h1>
+</div>
+<div id="deadText">期限:</div>
+<br>
+<div id="difText">文字数:</div>
+<br>
+<div id="time">経過時間: 0sec</div>
+<br>
+<div id="count">タイプ数: 0</div>
+<script src="sub.js"></script>
+</body>
+</html>
